@@ -1,4 +1,4 @@
-name: 'Merge-PR'
+name: 'Auto-Merge-PR'
 description: 'This Action merges pull requests.'
 runs:
    using: 'docker'
