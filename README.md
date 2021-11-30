@@ -1,13 +1,16 @@
 # Merginator
 
-This Action merges pull requests and deletes the branch associated with the PR.
+This Action merges pull requests.
 
-# Environment Variables
+## Environment Variables
+
 - `GITHUB_TOKEN` - _Required_ Allows the Action to authenticte with the GitHub API.
 - `GITHUB_HOST` - _Default: github.com_ Set it to `github.enterprise.com` to run on GHES
 
-# Examples
-Here's an example workflow that uses the Merginator.  The workflow is triggered by a `PULL_REQUEST` being opened or reopened and checks for the following before merging the PR:
+## Examples
+
+Here's an example workflow that uses the Merginator.
+The workflow is triggered by a `PULL_REQUEST` being opened or reopened and checks for the following before merging the PR:
 
 - The PR author is one of "automate6500" or "octocat"
 - The code associted with the PR passes all lints and unit tests
@@ -25,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     
     - uses: actions/setup-python@v1
       with:
@@ -46,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     
     - uses: hmarr/auto-approve-action@v2.0.0
       with:
