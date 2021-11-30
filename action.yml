@@ -1,8 +1,8 @@
-name: 'Merginator'
-description: 'This Action merges pull requests and deletes the branch associated with the PR.'
+name: 'Merge-PR'
+description: 'This Action merges pull requests.'
 runs:
    using: 'docker'
    image: 'Dockerfile'
 branding:
    icon: 'git-merge'
-   color: 'orange'
+   color: 'blue'
